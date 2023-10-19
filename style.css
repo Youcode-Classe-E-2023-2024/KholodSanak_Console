@@ -104,8 +104,8 @@ body {
 
 /****   Game News Page   ****/
 
-.news-container {
-    padding: 80px 100px;
+.container {
+    padding: 10px 100px;
     background-image:url("images/bg.jpg") ;
     background-repeat: no-repeat;
     background-size: cover;
@@ -117,7 +117,7 @@ body {
     color: white;
     text-shadow: 2px 2px 2px #009CFE;
     text-align: center;
-    padding-bottom: 50px;
+    padding: 50px 0;
 }
 
 .parent {
@@ -132,6 +132,7 @@ body {
 .box2,
 .box3 {
     height: 100%;
+    border-radius: 50px;
 }
 
 .box1 {
@@ -148,6 +149,23 @@ body {
 
 .box3 {
     background-image: url("images/img4.jpg");
+    background-size:cover;
+}
+
+/************    Reviews *********/
+.transparent-box{
+    width: 100%;
+    height:100vh ;
+    border-radius: 50px;
+    background-color: rgba(141, 44, 90, 0.3); /* Use rgba to set transparent background */
+    backdrop-filter: blur(10px);
+}
+
+.review{
+    display: flex;
+}
+.review1{
+    background-image: url("images/img2.jpg");
     background-size:cover;
 }
 
