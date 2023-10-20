@@ -215,3 +215,11 @@ h1{
 }
 
 
+/**** footer ****/
+.footer{
+    width: 100%;
+    padding: 100px;
+    background-color: rgba(6, 21, 21, 0.6); /* Use rgba to set transparent background */
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
