@@ -118,6 +118,8 @@ body {
 }
 
 
+
+/************************************/
 /**  Titles for pages  **/
 .page-title{
     font-weight: bold;
@@ -131,7 +133,13 @@ h1{
     font-weight: bold;
     color: white;
     padding: 50px 50px 30px 50px;
+}
 
+.join-title{
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 2px #D51062;
+    padding: 50px 0;
 }
 
 
@@ -228,6 +236,40 @@ h1{
     background-size:contain;
     background-repeat: no-repeat;
 }
+
+/****   join us   ****/
+
+.join-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.join-img{
+    width: 300px;
+    height: 200px;
+    background-image: url("images/background3.jpg");
+    background-size:contain;
+}
+
+
+ .join-form {
+     background-color: #f4f4f4;
+     padding: 20px;
+     border-radius: 10px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ }
+
+/* Style form elements */
+.join-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.join-form label {
+    font-weight: bold;
+}
+
+
 
 
 /**** footer ****/
