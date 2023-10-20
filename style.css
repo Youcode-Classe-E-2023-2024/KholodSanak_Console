@@ -36,7 +36,6 @@ body {
     background: transparent;
     background-color: rgba(5, 8, 14, 0.21);;
     backdrop-filter: blur(2px);
-    color:white;
 }
 
 .navbar-container{
