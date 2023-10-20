@@ -18,13 +18,16 @@ body {
 }
 /** Navbar container it has all the navbar elements **/
 .navbar{
-    position: absolute;
+    position: fixed;
     right: 0;
     left: 0;
     top: 0;
     padding:10px 0;
     z-index: 1000;
     margin-top: 10px;
+    background: transparent;
+    background-color: rgba(6, 21, 21, 0.21);
+    backdrop-filter: blur(2px);
 }
 
 .navbar-container{
@@ -120,6 +123,13 @@ body {
     padding: 50px 0;
 }
 
+h1{
+    font-weight: bold;
+    color: white;
+    padding: 50px 50px 30px 50px;
+
+}
+
 .parent {
     width: 100%;
     height: 100vh;
@@ -155,7 +165,7 @@ body {
 /************    Reviews *********/
 .transparent-box{
     width: 100%;
-    height:100vh ;
+    height:100% ;
     border-radius: 50px;
     background-color: rgba(141, 44, 90, 0.3); /* Use rgba to set transparent background */
     backdrop-filter: blur(10px);
@@ -163,10 +173,31 @@ body {
 
 .review{
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 20px;
 }
-.review1{
+/*
+.review1 img{
+    height: 100px;
+    width: 100px;
+}*/
+.review-img{
+    width:500px;
+    height: 200px;
     background-image: url("images/img2.jpg");
     background-size:cover;
+    border-radius: 50px;
+
+}
+.review-text{
+    width: 300px;
+    color: white;
+}
+.review-stars{
+    color:gold;
+    font-size: 2em;
+
 }
 
 
