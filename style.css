@@ -126,7 +126,7 @@ body {
     color: white;
     text-shadow: 2px 2px 2px #009CFE;
     text-align: center;
-    padding: 50px 0;
+    padding: 100px 0 50px 0;
 }
 
 h1{
@@ -161,6 +161,7 @@ h1{
 .box3 {
     height: 100%;
     border-radius: 50px;
+    position: relative;
 }
 
 .box1 {
@@ -180,6 +181,88 @@ h1{
     background-size:cover;
 }
 
+.overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #009CFE;
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: .5s ease;
+    border-radius: 50px;
+}
+
+.box1:hover .overlay,
+.box2:hover .overlay,
+.box3:hover .overlay
+ {
+    bottom: 0;
+    height: 100%;
+
+}
+
+.game-sections {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+/****** Game sections   ****/
+.transparent-box-section{
+    width: 100%;
+    height:100% ;
+    border-radius: 50px;
+    background-color: rgba(0, 156, 254, 0.3); /* Use rgba to set transparent background */
+    backdrop-filter: blur(10px);
+}
+
+.section-container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    max-height: 500px;
+}
+
+.sec1 img {
+    max-width: 450px;
+    height: 90%;
+    margin-top: 50px;
+    border-radius: 50px;
+}
+
+.sec2{
+    margin-top: 50px;
+}
+
+.sec2 p{
+    max-width: 300px;
+    color: white;
+    display: block;
+}
+
+/*** video container   **/
+.preview-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.video{
+     padding-bottom: 100px;
+}
+
+
+
 /************    Reviews *********/
 .transparent-box{
     width: 100%;
@@ -188,6 +271,8 @@ h1{
     background-color: rgba(141, 44, 90, 0.3); /* Use rgba to set transparent background */
     backdrop-filter: blur(10px);
 }
+
+
 
 .review{
     display: flex;
