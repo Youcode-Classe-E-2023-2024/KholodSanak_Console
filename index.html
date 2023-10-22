@@ -13,12 +13,12 @@
 <section class="main-container">
     <!-- homepage slider -->
     <div class="homepage">
-        <div class="img_slider"><!--
+        <div class="img_slider">
             <img src="images/background1.jpg" alt="background">
             <img src="images/background2.jpg" alt="background">
-            <img src="images/background3.jpg" alt="background">
-            <button id="previous"> < </button>
-            <button id="next"> ></button>-->
+            <img src="images/background4.jpg" alt="background">
+            <button id="previous"> &lt; </button>
+            <button id="next"> &gt;</button>
         </div>
         <!-- NavBar and logo -->
         <nav class="navbar">
@@ -213,17 +213,55 @@
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 <script>
-    // Get the empty stars and full stars elements by their IDs
-    const emptyStars = document.getElementById("empty-stars");
-    const fullStars = document.getElementById("full-stars");
+    // JavaScript for the image slider
+    const slider = document.querySelector(".img_slider");
+    const images = document.querySelectorAll(".img_slider img");
+    const prevButton = document.getElementById("previous");
+    const nextButton = document.getElementById("next");
+    let currentIndex = 0;
 
-    // Add a click event listener to the empty stars element
-    emptyStars.addEventListener("click", function () {
-        // Toggle between visible and hidden for the empty and full star elements
-        emptyStars.style.display = "none";
-        fullStars.style.display = "block";
+    // Function to show the current image
+    function showImage(index) {
+        images.forEach((image, i) => {
+            if (i === index) {
+                image.style.display = "block";
+            } else {
+                image.style.display = "none";
+            }
+        });
+    }
 
+    // Function to show the next image
+    function showNextImage() {
+        currentIndex = (currentIndex + 1) % images.length;
+        showImage(currentIndex);
+    }
+
+    // Function to start the automatic slider
+    function startSlider() {
+        setInterval(showNextImage, 3000); // Change image every 3 seconds (adjust as needed)
+    }
+
+    // Event listener for the next button
+    nextButton.addEventListener("click", () => {
+        showNextImage();
     });
+
+    // Event listener for the previous button
+    prevButton.addEventListener("click", () => {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        showImage(currentIndex);
+    });
+
+    // Show the first image initially
+    showImage(currentIndex);
+
+    // Start the automatic slider when the page loads
+    startSlider();
+
+
+
+
 </script>
 </body>
 </html>
