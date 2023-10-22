@@ -16,6 +16,12 @@ body {
     background-size: cover;
     height:100%;
 }
+
+/**** other pages container   ****/
+
+.resize{
+    margin:10px 100px;
+}
 /** Home Image **/
 .img_slider{
     position:relative;
@@ -278,6 +284,8 @@ h1{
 
 
 
+
+
 /************    Reviews *********/
 .transparent-box{
     width: 100%;
@@ -286,7 +294,6 @@ h1{
     background-color: rgba(141, 44, 90, 0.3); /* Use rgba to set transparent background */
     backdrop-filter: blur(10px);
 }
-
 
 
 .review{
