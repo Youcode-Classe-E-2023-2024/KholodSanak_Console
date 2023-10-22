@@ -347,7 +347,6 @@ h1{
     backdrop-filter: blur(10px);
 }
 
-
 .review{
     display: flex;
     justify-content: space-around;
@@ -378,8 +377,33 @@ h1{
 
 .full{
     text-shadow: -1px -1px 0 gold, 1px -1px 0 gold, -1px 1px 0 gold, 1px 1px 0 gold;
+}
+
+
+/* Style the "Read More" button */
+.read-more-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.review-text-content{
+    max-height: 100px; /* Adjust to the desired height to display initially */
+    overflow: hidden;
+    transition: max-height 0.3s;
 
 }
+/* Expand the review text content when the "Read More" button is clicked */
+.review-text-content.expanded {
+    max-height: none;
+}
+
+
+
+
  /*********    Magazines part        ******/
 
 .mag-container{
