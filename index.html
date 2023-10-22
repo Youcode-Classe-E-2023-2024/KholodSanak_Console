@@ -161,24 +161,25 @@
         <!-- Magazines End-->
 
         <!-- Join us  Start-->
-        <div class="join-container" id="joinus">
-            <div class="join-img"></div>
-            <div class="join-form">
-                <h1 class="join-title"> Join us</h1>
-                <form id="joinForm">
-                    <ion-icon name="person"></ion-icon>
-                    <input type="text" id="username" name="username" required>
+        <div class="join" id="joinus">
+            <div class="join-container">
+                <div class="join-img"></div>
+                <div class="join-form">
+                    <h1 class="join-title"> Join us</h1>
+                    <form id="joinForm">
+                        <div class="username">
+                            <ion-icon name="person"></ion-icon>
+                            <input type="text" id="username" name="username" placeholder="Username" required>
+                        </div>
+                        <div class="password">
+                            <ion-icon name="lock-closed"></ion-icon>
+                            <input type="password" id="password" name="password" placeholder="Password" required><br>
+                        </div>
+                        <button class="submit" type="submit">Submit</button>
+                    </form>
 
-                    <ion-icon name="lock-closed"></ion-icon>
-                    <input type="password" id="password" name="password" required>
-
-
-                    <button type="submit">Submit</button>
-                </form>
-
-
+                </div>
             </div>
-
         </div>
         <!-- Join us  End-->
 
@@ -187,17 +188,25 @@
 
     <footer >
         <div class="foot">
-            <a href="https://www.facebook.com" target="_blank">
-                <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-            <a href="https://www.instagram.com" target="_blank">
-                <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-            <a href="mailto:youremail@gmail.com" target="_blank">
-                <ion-icon name="mail-outline"></ion-icon>
-            </a>
-            <p>&copy; 2023 Olivierdeprovince</p>
+            <div class="foot-reactive">
+                <a class=" navbar-logo" href="index.html">
+                    <img  src="images/logo-cnsole1.png" alt="logo" style="width:120px">
+                </a>
+                <div class="icons">
+                    <a href="https://www.facebook.com" target="_blank">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                    <a href="mailto:youremail@gmail.com" target="_blank">
+                        <ion-icon name="mail-outline"></ion-icon>
+                    </a>
+                </div>
+            </div>
+            <p class="copy-right">&copy; 2023 Console+. All Right Preserved</p>
         </div>
+
     </footer>
 </section>
 
