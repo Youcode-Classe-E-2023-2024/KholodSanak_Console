@@ -268,8 +268,10 @@ h1{
 
 /****   Game News Page   ****/
 .container-game{
-    padding: 10px 100px;
+    padding: 10px 50px;
     height:100%;
+    
+    
 }
 .parent {
     width: 100%;
@@ -655,13 +657,6 @@ h1{
 /****   Game News Page   ****/
 
 
-/* .page-title{
-    font-weight: bold;
-    color: white;
-    text-shadow: 2px 2px 2px #009CFE;
-    text-align: center;
-}
-
 .parent {
     gap:5px;
     
@@ -670,42 +665,33 @@ h1{
 .box1,
 .box2,
 .box3 {
-    height: 30%;
-    border-radius:0px;
-    position: relative;
+    height:  70%;
+    border-radius: 0;
+    padding: 20px 10px;
+    
 }
 
 .box1 {
     background-image: url("images/img1.jpg");
-    background-size:contain;
-   /* background-repeat: no-repeat;*/
-    /* grid-row: 1/3;
+    background-size:cover;
+     height: 85%
 }
 
 .box2 {
     background-image: url("images/img3.jpg");
-    background-size:contain;
-    background-repeat: no-repeat;
+    background-size:cover;
+    height: 70%
 
 }
 
 .box3 {
     background-image: url("images/img4.jpg");
-    background-size:contain; 
-    /*background-repeat: no-repeat;
+    background-size:cover;
+    height: 70%
 }
 
 .overlay {
-    position: absolute;
-    bottom: 100%;
-    left: 0;
-    right: 0;
-    background-color: #009CFE;
-    overflow: hidden;
-    width: 100%;
-    height:0;
-    transition: .5s ease;
-    border-radius: 50px;
+    border-radius: 0;
 }
 
 .box1:hover .overlay,
@@ -720,13 +706,70 @@ h1{
 .game-sections {
     text-decoration: none;
     color: white;
-    font-size: 20px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-} */
+} 
+
+
+
+
+
+/****** Game sections   ****/
+
+.section-container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.sec1 img {
+    max-width: 450px;
+    height: 70%;
+    border-radius: 0;
+}
+
+.sec2{
+    margin-top: 50px;
+}
+
+.sec2 p{
+    max-width: 300px;
+    color: white;
+    display: block;
+}
+
+.sec3 img {
+    max-width: 700px;
+    height: 50%;
+    margin-bottom: 50px;
+    border-radius: 50px;
+}
+
+.sec4 p{
+    max-width: 700px;
+    color: white;
+    display: block;
+}
+
+
+
+/*** video container   **/
+.preview-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.video{
+     padding-bottom: 100px;
+}
+
+
+
 
 /****** Reviews  ****/
 
