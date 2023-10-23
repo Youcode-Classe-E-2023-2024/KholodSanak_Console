@@ -719,54 +719,38 @@ h1{
 
 /****** Game sections   ****/
 
-.section-container{
-    display: flex;
-    justify-content: center;
-    align-content: center;
+.container-game {
+    padding: 30px; /* Add some padding for better mobile layout */
 }
 
-.sec1 img {
-    max-width: 450px;
-    height: 70%;
-    border-radius: 0;
-}
-
-.sec2{
-    margin-top: 50px;
-}
-
-.sec2 p{
-    max-width: 300px;
-    color: white;
-    display: block;
-}
-
-.sec3 img {
-    max-width: 700px;
-    height: 50%;
-    margin-bottom: 50px;
-    border-radius: 50px;
-}
-
-.sec4 p{
-    max-width: 700px;
-    color: white;
-    display: block;
-}
-
-
-
-/*** video container   **/
-.preview-container{
+.transparent-box-section {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    padding: 10px;   
+}
+
+.section-container {
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
-.video{
-     padding-bottom: 100px;
+.sec1 img {
+    width: 100px; 
 }
+
+.sec3 img{
+    width: 300px;
+}
+
+.sec2 .sec4{
+    text-align: center;
+}
+
+.video iframe {
+    max-width: 300px; 
+}
+
 
 
 
