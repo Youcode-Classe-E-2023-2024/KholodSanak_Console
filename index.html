@@ -13,6 +13,7 @@
 <section class="main-container">
     <!-- homepage slider -->
     <div class="homepage">
+        <img  src="images/logo-cnsole1.png" alt="logo" class="logo-mobile-img">
         <div class="img_slider">
             <img src="images/background1.jpg" alt="background">
             <img src="images/background2.jpg" alt="background">
@@ -37,6 +38,24 @@
         </nav>
         <!--NavBar End -->
 
+
+        <!--Mobile NavBar Start-->
+        <div class="mobile-menu">
+            <div class="menu-icon">
+            
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="mobile-menu-items">
+                <li> <a href="index.html" >Home</a> </li>
+                <li> <a href="#game-news" >Game News</a> </li>
+                <li> <a href="#reviews" >Reviews</a> </li>
+                <li> <a href="#magazines" >Magazines</a> </li>
+                <li> <a href="#joinus" >Join Us</a> </li>
+            </ul>
+        </div>
+        <!--Mobile NavBar End-->
         <!-- Description Start -->
         <div class="description-box">
             <h1 class="description">
@@ -279,7 +298,12 @@
 
     //phone NavBar
 
+                
+        const mobileMenu = document.querySelector('.mobile-menu');
 
+        mobileMenu.addEventListener('click',function () {
+            mobileMenu.classList.toggle('active');
+        });
 
 </script>
 </body>

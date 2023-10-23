@@ -102,6 +102,67 @@ body {
     padding:0 20px;
 }
 
+/* Mobile elements */
+
+
+
+
+.mobile-menu {
+    display: none;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1001;
+    cursor: pointer;
+}
+
+.menu-icon .bar {
+    width: 30px;
+    height: 3px;
+    background-color: #006EA3;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+.mobile-menu.active .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.mobile-menu.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.mobile-menu.active .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.mobile-menu-items {
+    display: none;
+    background-color: #006EA3;
+    
+    top: 60px;
+    right: 0;
+    left: 0;
+}
+
+.mobile-menu.active .mobile-menu-items {
+    display: block;
+    padding: 20px;
+}
+
+.mobile-menu-items li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.mobile-menu-items a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
 
 /** NavBar elements **/
 /***** Logo *********/
@@ -110,6 +171,10 @@ body {
 }
 .logo-img{
     width: 	200px;
+}
+
+.logo-mobile-img{
+    display: none;
 }
 /** list elements **/
 .navbar-nav{
@@ -532,7 +597,7 @@ h1{
     color: white;
 }
 
-
+/* ***************************************** */
 /****** Media query for phone   *******/
 
 @media(max-width: 450px) {
@@ -542,20 +607,23 @@ h1{
     }
 /** Navbar container it has all the navbar elements **/
 
-.navbar-nav{
+
+
+/* Mobile */
+
+.navbar {
     display: none;
 }
-.navbar-container{
-    display: flex;
-    justify-content: flex-start;
+
+.mobile-menu {
+    display: block;
 }
-.logo-img{
-    max-width: 	100px;
+.logo-mobile-img{
+    display: block;
+    padding: 10px;
+    width: 100px;
 }
 
-.join-button{
-    display:none;
-}
 
 
 /**** Description home  ***/
@@ -683,7 +751,6 @@ h1{
     width:80px;
 }
 
-
 /* Style the "Read More" button */
 .read-more-button {
     padding: 5px 5px;
@@ -691,4 +758,45 @@ h1{
     font-size: 8px;
 }
 
+/* Magazines section */
+
+.mag1{
+    width: 100px;
+    height: 100px;
 }
+
+
+/* Join us Form */
+
+
+
+.join-container{
+    max-width: 400px;
+
+}
+.join-img{
+    height: 250px;
+}
+
+
+/* Style form elements */
+
+
+#joinForm ion-icon {
+    color: white;
+    font-size: 10px;
+}
+
+#joinForm input[type="text"],
+#joinForm input[type="password"] {
+    max-width: 100px;
+}
+
+/**** submit button  ****/
+.submit{
+    margin-left: 20px;
+    padding: 5px;
+}
+
+}
+
