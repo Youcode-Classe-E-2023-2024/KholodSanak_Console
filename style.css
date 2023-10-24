@@ -26,6 +26,7 @@ body {
 /**** other pages container   ****/
 .resize{
     margin:10px 80px;
+
 }
 /** Home Image
 
@@ -134,7 +135,6 @@ body {
 .mobile-menu-items {
     display: none;
     background-color: #006EA3;
-    
     top: 60px;
     right: 0;
     left: 0;
@@ -490,7 +490,7 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 100px;
+    padding: 80px 0;
 }
 
 .join-container{
@@ -612,6 +612,7 @@ h1{
         display: block;
         padding: 10px;
         width: 100px;
+
     }
 
     /**** Description home  ***/
@@ -640,12 +641,13 @@ h1{
     }
 
     .container-game{
-            padding: 5px 30px;
+            padding: 20px 30px;
             max-width: 400px;
+            margin-bottom: 10px;
     }
     /****** resize container for pages   *******/
     .resize {
-        margin: 30px 20px;
+       margin: 0px 20px;
     }
     /******************   Game News Page   ***********************/
     .parent {
@@ -702,6 +704,7 @@ h1{
 
 
     /********************    Reviews    ***********************/
+
     .review-img{
         width:100px;
         height: 80px;
