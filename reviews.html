@@ -24,6 +24,23 @@
     </div>
 </nav>
 <!--NavBar End -->
+<!--Mobile NavBar Start-->
+<div class="mobile-menu">
+    <div class="menu-icon">
+
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    <ul class="mobile-menu-items">
+        <li> <a href="index.html" >Home</a> </li>
+        <li> <a href="game_news.html" >Game News</a> </li>
+        <li> <a href="reviews.html" >Reviews</a> </li>
+        <li> <a href="magazines.html" >Magazines</a> </li>
+        <li> <a href="join_us.html" >Join Us</a> </li>
+    </ul>
+</div>
+<!--Mobile NavBar End-->
 
 <!-- container-->
 <main class="main-container">
@@ -129,6 +146,13 @@
 
             button.textContent = reviewText.classList.contains('expanded') ? 'Read Less' : 'Read More';
         });
+    });
+
+    //phone NavBar
+    const mobileMenu = document.querySelector('.mobile-menu');
+
+    mobileMenu.addEventListener('click',function () {
+        mobileMenu.classList.toggle('active');
     });
 
 </script>

@@ -25,7 +25,7 @@ body {
 /**** other pages container   ****/
 
 .resize{
-    margin:10px 100px;
+    margin:10px 80px;
 }
 /** Home Image
 
@@ -37,14 +37,9 @@ body {
     height:100vh;
     width: 100px;
 }**/
-
-
-
-
 .img_slider {
     position: relative;
 }
-
 .img_slider img {
     display: none;
     max-width: 100%;
@@ -599,7 +594,7 @@ h1{
     color: white;
 }
 
-/* ***************************************** */
+/* ***************************************** **********************************************/
 /****** Media query for phone   *******/
 
 @media(max-width: 450px) {
@@ -608,8 +603,6 @@ h1{
         font-size:10px ;
     }
 /** Navbar container it has all the navbar elements **/
-
-
 
 /* Mobile */
 
@@ -634,7 +627,6 @@ h1{
     top:80px;
     left:30px;
     color:white;
-    
 }
 .description{
     font-size: 10px;
@@ -654,12 +646,13 @@ h1{
     margin-left: 50px;
 }
 
-/****   Game News Page   ****/
+/******************   Game News Page   ***********************/
 
-
+.resize {
+    margin: 50px 20px;
+}
 .parent {
     gap:5px;
-    
 }
 
 .box1,
@@ -668,7 +661,6 @@ h1{
     height:  70%;
     border-radius: 0;
     padding: 20px 10px;
-    
 }
 
 .box1 {
@@ -681,7 +673,6 @@ h1{
     background-image: url("images/img3.jpg");
     background-size:cover;
     height: 70%
-
 }
 
 .box3 {
@@ -700,7 +691,6 @@ h1{
  {
     bottom: 0;
     height: 100%;
-
 }
 
 .game-sections {
@@ -717,7 +707,7 @@ h1{
 
 
 
-/****** Game sections   ****/
+/****************     Game sections   **********************/
 
 .container-game {
     padding: 30px; /* Add some padding for better mobile layout */
@@ -754,8 +744,7 @@ h1{
 
 
 
-
-/****** Reviews  ****/
+/********************    Reviews    ***********************/
 
 .review{
     padding-left: 5px;
@@ -785,7 +774,7 @@ h1{
     font-size: 8px;
 }
 
-/* Magazines section */
+/***************** Magazines section ***********/
 
 .mag1{
     width: 100px;
@@ -793,32 +782,26 @@ h1{
 }
 
 
-/* Join us Form */
-
-
+/************** Join us Form **************/
 
 .join-container{
     max-width: 400px;
+    margin-top: 40px;
 
 }
 .join-img{
     height: 250px;
 }
 
-
-/* Style form elements */
-
-
+/**** Style form elements ****/
 #joinForm ion-icon {
     color: white;
     font-size: 10px;
 }
-
 #joinForm input[type="text"],
 #joinForm input[type="password"] {
     max-width: 100px;
 }
-
 /**** submit button  ****/
 .submit{
     margin-left: 20px;
