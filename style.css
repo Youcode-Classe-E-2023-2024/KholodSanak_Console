@@ -645,7 +645,7 @@ h1{
     }
     /****** resize container for pages   *******/
     .resize {
-            margin: 30px 20px;
+        margin: 30px 20px;
     }
     /******************   Game News Page   ***********************/
     .parent {
@@ -684,32 +684,24 @@ h1{
 
 
     /****************     Game sections   **********************/
-
     .transparent-box-section {
-        padding: 10px;
+        padding-left: 10px;
     }
-
     .sec1 img {
         width: 100px;
     }
-
     .sec3 img{
         width: 300px;
     }
-
     .sec2 .sec4{
         text-align: center;
     }
-
     .video iframe {
         max-width: 300px;
     }
 
 
-
-
     /********************    Reviews    ***********************/
-
     .review-img{
         width:100px;
         height: 80px;
@@ -731,7 +723,6 @@ h1{
         margin-top: 5px;
         font-size: 8px;
     }
-
 
 
     /***************** Magazines section ***********/
