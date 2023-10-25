@@ -451,8 +451,6 @@ h1{
 .review-text-content{
     max-height: 100px; /* Adjust to the desired height to display initially */
     overflow: hidden;
-    transition: max-height 0.3s;
-
 }
 /* Expand the review text content when the "Read More" button is clicked */
 .review-text-content.expanded {
