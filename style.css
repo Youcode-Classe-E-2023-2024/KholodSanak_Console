@@ -43,7 +43,7 @@ body {
 }
 .img_slider img {
     display: none;
-    max-width: 100%;
+    width: 100%;
 }
 
 #previous,
