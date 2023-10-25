@@ -25,7 +25,7 @@ body {
 
 /**** other pages container   ****/
 .resize{
-    margin:10px 80px;
+    margin:0px 80px 10px 80px;
 
 }
 /** Home Image
@@ -608,8 +608,12 @@ h1{
     .mobile-menu {
         display: block;
     }
+
+    .mob{
+        display: flex;
+    }
     .logo-mobile-img{
-        display: block;
+        display: flex;
         padding: 10px;
         width: 100px;
 
@@ -625,7 +629,7 @@ h1{
     .description{
         font-size: 10px;
         font-weight: bold;
-       margin-bottom: -40px;
+        margin-bottom: -40px;
     }
 
     /** Discover More Button **/
@@ -647,7 +651,8 @@ h1{
     }
     /****** resize container for pages   *******/
     .resize {
-       margin: 0px 20px;
+
+       margin: 0px 20px 20px 20px;
     }
     /******************   Game News Page   ***********************/
     .parent {
@@ -691,9 +696,14 @@ h1{
     }
     .sec1 img {
         width: 100px;
+
     }
     .sec3 img{
         width: 300px;
+    }
+
+    .sec2 p{
+        padding: 0 10px;
     }
     .sec2 .sec4{
         text-align: center;
